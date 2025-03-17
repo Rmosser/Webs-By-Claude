@@ -1,0 +1,1116 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>女性月经生理学 - 研究历程、机制与未解之谜</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --color-primary: #7E57C2;
+            --color-secondary: #26A69A;
+            --color-accent: #F06292;
+            --color-text-light: #37474F;
+            --color-text-dark: #ECEFF1;
+            --color-bg-light: #FFFFFF;
+            --color-bg-dark: #121212;
+            --color-card-light: #F5F7FA;
+            --color-card-dark: #1E1E1E;
+            --color-border-light: #E0E0E0;
+            --color-border-dark: #333333;
+        }
+        
+        .dark {
+            --color-primary: #9575CD;
+            --color-secondary: #4DB6AC;
+            --color-accent: #F48FB1;
+        }
+        
+        body {
+            font-family: 'Noto Sans SC', sans-serif;
+            transition: background-color 0.3s ease;
+            background-color: var(--color-bg-light);
+            color: var(--color-text-light);
+        }
+        
+        .dark body {
+            background-color: var(--color-bg-dark);
+            color: var(--color-text-dark);
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Noto Serif SC', serif;
+            font-weight: 600;
+        }
+        
+        .content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .card {
+            background-color: var(--color-card-light);
+            border: 1px solid var(--color-border-light);
+            transition: all 0.3s ease;
+        }
+        
+        .dark .card {
+            background-color: var(--color-card-dark);
+            border: 1px solid var(--color-border-dark);
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .dark .card:hover {
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        }
+        
+        .section-title {
+            position: relative;
+            display: inline-block;
+            margin-bottom: 1.5rem;
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background-color: var(--color-secondary);
+        }
+        
+        .nav-link {
+            position: relative;
+            transition: color 0.3s ease;
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--color-primary);
+            transition: width 0.3s ease;
+        }
+        
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        
+        .timeline {
+            position: relative;
+            padding-left: 50px;
+        }
+        
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 20px;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background-color: var(--color-secondary);
+        }
+        
+        .timeline-item {
+            position: relative;
+            margin-bottom: 30px;
+        }
+        
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -40px;
+            top: 5px;
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background-color: var(--color-accent);
+            border: 3px solid var(--color-secondary);
+        }
+        
+        .timeline-date {
+            font-weight: bold;
+            color: var(--color-primary);
+        }
+        
+        .diagram {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .diagram:hover {
+            transform: scale(1.02);
+        }
+        
+        .dark .diagram {
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            filter: brightness(0.9);
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .fade-in {
+            animation: fadeIn 0.8s ease forwards;
+            opacity: 0;
+        }
+        
+        .btn {
+            transition: all 0.3s ease;
+        }
+        
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        .scroll-progress {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 3px;
+            background: linear-gradient(90deg, var(--color-primary), var(--color-accent));
+            z-index: 100;
+            width: 0%;
+            transition: width 0.1s ease;
+        }
+        
+        .table-of-contents {
+            position: sticky;
+            top: 100px;
+        }
+        
+        .table-of-contents li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .table-of-contents a {
+            transition: all 0.3s ease;
+            display: block;
+            padding: 5px 0;
+            border-left: 2px solid transparent;
+            padding-left: 10px;
+        }
+        
+        .table-of-contents a:hover, .table-of-contents a.active {
+            border-left: 2px solid var(--color-primary);
+            color: var(--color-primary);
+        }
+        
+        .cycle-diagram {
+            position: relative;
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .hormone-chart {
+            width: 100%;
+            height: 300px;
+            margin: 2rem 0;
+        }
+        
+        .tag {
+            display: inline-block;
+            padding: 3px 8px;
+            font-size: 0.75rem;
+            border-radius: 12px;
+            background-color: var(--color-primary);
+            color: white;
+            margin-right: 5px;
+            margin-bottom: 5px;
+        }
+
+        /* Loading animation */
+        .loader {
+            display: inline-block;
+            position: relative;
+            width: 80px;
+            height: 80px;
+        }
+        
+        .loader div {
+            position: absolute;
+            top: 33px;
+            width: 13px;
+            height: 13px;
+            border-radius: 50%;
+            background: var(--color-primary);
+            animation-timing-function: cubic-bezier(0, 1, 1, 0);
+        }
+        
+        .loader div:nth-child(1) {
+            left: 8px;
+            animation: loader1 0.6s infinite;
+        }
+        
+        .loader div:nth-child(2) {
+            left: 8px;
+            animation: loader2 0.6s infinite;
+        }
+        
+        .loader div:nth-child(3) {
+            left: 32px;
+            animation: loader2 0.6s infinite;
+        }
+        
+        .loader div:nth-child(4) {
+            left: 56px;
+            animation: loader3 0.6s infinite;
+        }
+        
+        @keyframes loader1 {
+            0% { transform: scale(0); }
+            100% { transform: scale(1); }
+        }
+        
+        @keyframes loader2 {
+            0% { transform: translate(0, 0); }
+            100% { transform: translate(24px, 0); }
+        }
+        
+        @keyframes loader3 {
+            0% { transform: scale(1); }
+            100% { transform: scale(0); }
+        }
+        
+        /* Hide content while loading */
+        .content-loading {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        
+        .content-loaded {
+            display: block;
+        }
+
+        /* Print styles */
+        @media print {
+            .no-print {
+                display: none !important;
+            }
+            
+            .content {
+                max-width: 100%;
+                padding: 0;
+                margin: 0;
+            }
+            
+            body {
+                font-size: 12pt;
+                color: #000;
+                background-color: #fff;
+            }
+            
+            a {
+                color: #000;
+                text-decoration: none;
+            }
+            
+            .diagram, .card {
+                page-break-inside: avoid;
+                break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+<body class="antialiased">
+    
+    <!-- Main content (hidden initially) -->
+    <div class="content-loaded">
+        <!-- Scroll progress indicator -->
+        <div class="scroll-progress no-print"></div>
+        
+        <!-- Header -->
+        <header class="sticky top-0 z-50 bg-white dark:bg-gray-900 shadow-md no-print">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex justify-between h-16 items-center">
+                    <div class="flex-shrink-0 flex items-center">
+                        <h1 class="text-xl font-bold text-gray-900 dark:text-white">女性月经生理学</h1>
+                    </div>
+                    <nav class="hidden md:flex space-x-10">
+                        <a href="#research-history" class="nav-link text-gray-700 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white">研究历程</a>
+                        <a href="#hormone-regulation" class="nav-link text-gray-700 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white">激素调控</a>
+                        <a href="#endometrial-changes" class="nav-link text-gray-700 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white">内膜变化</a>
+                        <a href="#research-methods" class="nav-link text-gray-700 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white">研究方法</a>
+                        <a href="#current-research" class="nav-link text-gray-700 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white">研究热点</a>
+                    </nav>
+                    <div class="flex items-center space-x-4">
+                        <button id="theme-toggle" class="p-2 rounded-full text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline-none">
+                            <svg id="theme-toggle-dark-icon" class="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+                            </svg>
+                            <svg id="theme-toggle-light-icon" class="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"></path>
+                            </svg>
+                        </button>
+                        <button class="md:hidden focus:outline-none" id="mobile-menu-button">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Mobile menu, show/hide based on menu state -->
+                <div class="md:hidden hidden" id="mobile-menu">
+                    <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                        <a href="#research-history" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-700">研究历程</a>
+                        <a href="#hormone-regulation" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-700">激素调控</a>
+                        <a href="#endometrial-changes" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-700">内膜变化</a>
+                        <a href="#research-methods" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-700">研究方法</a>
+                        <a href="#current-research" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-700">研究热点</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        
+        <!-- Hero Section -->
+        <section class="relative py-16 md:py-24 bg-gradient-to-r from-purple-50 to-teal-50 dark:from-gray-900 dark:to-gray-800">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="lg:flex lg:items-center lg:justify-between">
+                    <div class="lg:w-1/2 mb-10 lg:mb-0">
+                        <h1 class="text-4xl md:text-5xl font-bold leading-tight text-gray-900 dark:text-white mb-4 fade-in" style="animation-delay: 0.1s;">
+                            女性月经生理机制
+                        </h1>
+                        <p class="text-xl text-gray-700 dark:text-gray-300 mb-8 fade-in" style="animation-delay: 0.3s;">
+                            从古代误解到当代科学：探索月经周期的生理机制、研究历程及未解之谜
+                        </p>
+                        <div class="flex flex-wrap gap-3 mb-8 fade-in" style="animation-delay: 0.5s;">
+                            <span class="tag bg-purple-500">下丘脑-垂体-卵巢轴</span>
+                            <span class="tag bg-teal-500">子宫内膜周期</span>
+                            <span class="tag bg-pink-500">激素调控</span>
+                            <span class="tag bg-blue-500">生殖生理学</span>
+                            <span class="tag bg-amber-500">女性健康</span>
+                        </div>
+                        <div class="flex flex-wrap gap-4 fade-in" style="animation-delay: 0.7s;">
+                            <a href="#research-history" class="btn px-6 py-3 bg-purple-600 text-white rounded-lg hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-opacity-50">
+                                研究历程
+                            </a>
+                            <a href="#summary" class="btn px-6 py-3 bg-teal-600 text-white rounded-lg hover:bg-teal-700 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-opacity-50">
+                                内容概览
+                            </a>
+                        </div>
+                    </div>
+                    <div class="lg:w-2/5 fade-in" style="animation-delay: 0.7s;">
+                        <img src="https://api.placeholder.com/400/320" alt="月经周期图解" class="rounded-lg shadow-xl mx-auto">
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Main Content -->
+        <main class="py-12">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="lg:grid lg:grid-cols-4 lg:gap-8">
+                    <!-- Table of Contents (Sidebar) - Hidden on mobile -->
+                    <div class="hidden lg:block lg:col-span-1 no-print">
+                        <div class="table-of-contents prose dark:prose-invert">
+                            <h4 class="text-lg font-semibold text-gray-900 dark:text-white mb-4">目录</h4>
+                            <ul class="space-y-2 text-sm">
+                                <li><a href="#summary">内容概览</a></li>
+                                <li><a href="#research-history">历史研究背景</a></li>
+                                <li><a href="#hormone-regulation">激素调控机制</a></li>
+                                <li><a href="#endometrial-changes">子宫内膜周期性变化</a>
+                                    <ul class="pl-4 mt-2 space-y-2">
+                                        <li><a href="#proliferative-phase">增生期</a></li>
+                                        <li><a href="#secretory-phase">分泌期</a></li>
+                                        <li><a href="#menstrual-phase">月经期</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#research-methods">科学研究方法的演进</a></li>
+                                <li><a href="#current-research">当前研究热点</a>
+                                    <ul class="pl-4 mt-2 space-y-2">
+                                        <li><a href="#unsolved-mysteries">机制中的未解之谜</a></li>
+                                        <li><a href="#evolutionary-significance">进化意义</a></li>
+                                        <li><a href="#physiological-interactions">与其他系统的互动</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#maternal-fetal-conflict">母胎冲突假说</a></li>
+                                <li><a href="#further-reading">进一步阅读</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- Main Content -->
+                    <div class="lg:col-span-3">
+                        <!-- Summary Section -->
+                        <section id="summary" class="mb-16 fade-in">
+                            <h2 class="section-title text-3xl font-bold text-gray-900 dark:text-white">内容概览</h2>
+                            <div class="card p-6 rounded-lg">
+                                <p class="mb-4 text-gray-700 dark:text-gray-300">
+                                    月经是女性生殖系统的周期性生理现象，长期以来被各种文化误解和神秘化。本文全面梳理了人类对月经生理机制的科学探索历程，从早期的迷信误解，到现代对激素调控网络和子宫内膜变化的精确理解。
+                                </p>
+                                <p class="mb-4 text-gray-700 dark:text-gray-300">
+                                    从1827年卵子的首次发现，到1970年代GnRH的确认，再到21世纪的单细胞测序和类器官技术，科学家们逐步揭示了月经的核心机制：下丘脑-垂体-卵巢轴的协同作用，子宫内膜的周期性重塑，以及精密的激素反馈系统。
+                                </p>
+                                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6">
+                                    <div class="bg-purple-50 dark:bg-gray-800 rounded-lg p-4">
+                                        <h3 class="font-semibold text-purple-700 dark:text-purple-300 mb-2">主要内容</h3>
+                                        <ul class="list-disc pl-5 text-sm text-gray-700 dark:text-gray-300">
+                                            <li>历史研究背景</li>
+                                            <li>激素调控机制</li>
+                                            <li>子宫内膜周期性变化</li>
+                                            <li>研究方法演进</li>
+                                            <li>当前研究热点与未解之谜</li>
+                                        </ul>
+                                    </div>
+                                    <div class="bg-teal-50 dark:bg-gray-800 rounded-lg p-4">
+                                        <h3 class="font-semibold text-teal-700 dark:text-teal-300 mb-2">关键激素</h3>
+                                        <ul class="list-disc pl-5 text-sm text-gray-700 dark:text-gray-300">
+                                            <li>促性腺激素释放激素(GnRH)</li>
+                                            <li>促卵泡激素(FSH)</li>
+                                            <li>黄体生成素(LH)</li>
+                                            <li>雌激素(主要是17β-雌二醇)</li>
+                                            <li>孕激素(黄体酮)</li>
+                                        </ul>
+                                    </div>
+                                    <div class="bg-pink-50 dark:bg-gray-800 rounded-lg p-4">
+                                        <h3 class="font-semibold text-pink-700 dark:text-pink-300 mb-2">月经周期阶段</h3>
+                                        <ul class="list-disc pl-5 text-sm text-gray-700 dark:text-gray-300">
+                                            <li>卵泡期/增生期</li>
+                                            <li>排卵</li>
+                                            <li>黄体期/分泌期</li>
+                                            <li>月经期</li>
+                                            <li>内膜再生</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        
+                        <!-- Research History Section -->
+                        <section id="research-history" class="mb-16 fade-in">
+                            <h2 class="section-title text-3xl font-bold text-gray-900 dark:text-white">历史研究背景</h2>
+                            <p class="mb-8 text-gray-700 dark:text-gray-300">
+                                人类对月经的认识经历了从神秘误解到科学探究的漫长演变过程。在古代和中世纪，月经常被视为不洁或有毒的物质，直到20世纪科学方法的应用才逐渐揭开了月经的生理本质。
+                            </p>
+                            
+                            <div class="timeline mb-8">
+                                <div class="timeline-item">
+                                    <span class="timeline-date">1827年</span>
+                                    <div class="mt-2">
+                                        <h4 class="font-semibold text-gray-900 dark:text-white">卵子的发现</h4>
+                                        <p class="text-gray-700 dark:text-gray-300">德国生物学家卡尔·恩斯特·冯·贝尔首次发现并确认了哺乳动物卵子的存在，这是理解女性生殖生理学的重要里程碑。</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="timeline-item">
+                                    <span class="timeline-date">1901年</span>
+                                    <div class="mt-2">
+                                        <h4 class="font-semibold text-gray-900 dark:text-white">黄体功能的确认</h4>
+                                        <p class="text-gray-700 dark:text-gray-300">妇科医生路德维希·弗兰肯通过摘除和移植实验证明了黄体对维持妊娠的必要性，为后来孕激素的发现奠定基础。</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="timeline-item">
+                                    <span class="timeline-date">1920年代</span>
+                                    <div class="mt-2">
+                                        <h4 class="font-semibold text-gray-900 dark:text-white">排卵时间的确定</h4>
+                                        <p class="text-gray-700 dark:text-gray-300">日本的荻野久作和奥地利的赫尔曼·克瑙斯分别研究发现女性排卵通常发生在下次月经来潮前约14天，为理解月经周期提供了关键时间点。</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="timeline-item">
+                                    <span class="timeline-date">1929-1935年</span>
+                                    <div class="mt-2">
+                                        <h4 class="font-semibold text-gray-900 dark:text-white">性激素的分离与鉴定</h4>
+                                        <p class="text-gray-700 dark:text-gray-300">科学家成功从卵巢提取物中分离出雌激素(1929年)和孕酮(1934年)，证实了这些激素在月经周期调控中的关键作用。</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="timeline-item">
+                                    <span class="timeline-date">1940年</span>
+                                    <div class="mt-2">
+                                        <h4 class="font-semibold text-gray-900 dark:text-white">眼前房实验</h4>
+                                        <p class="text-gray-700 dark:text-gray-300">美国学者J.E.马克将人类子宫内膜组织移植到恒河猴的眼前房，通过透明的眼前房直接观察到子宫内膜在激素撤退后出血的过程，证明了月经是由激素变化驱动的局部反应。</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="timeline-item">
+                                    <span class="timeline-date">1950年代</span>
+                                    <div class="mt-2">
+                                        <h4 class="font-semibold text-gray-900 dark:text-white">激素测定与内膜分期</h4>
+                                        <p class="text-gray-700 dark:text-gray-300">放射免疫测定(RIA)技术的应用使精确测量血液中激素水平成为可能。同时，Noyes等人建立了子宫内膜周期分期标准，为临床评估提供了依据。</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="timeline-item">
+                                    <span class="timeline-date">1970年代</span>
+                                    <div class="mt-2">
+                                        <h4 class="font-semibold text-gray-900 dark:text-white">GnRH的发现</h4>
+                                        <p class="text-gray-700 dark:text-gray-300">罗杰·吉列明和安德鲁·沙利从下丘脑组织中提取并测定出促性腺激素释放激素(GnRH)的结构，完整揭示了下丘脑-垂体-卵巢轴的调控机制，他们因此获得1977年诺贝尔生理学或医学奖。</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="timeline-item">
+                                    <span class="timeline-date">20世纪末-21世纪初</span>
+                                    <div class="mt-2">
+                                        <h4 class="font-semibold text-gray-900 dark:text-white">分子生物学时代</h4>
+                                        <p class="text-gray-700 dark:text-gray-300">科学家克隆了性激素受体基因，利用转基因和基因敲除技术研究这些基因的功能，建立"人工月经周期"模型，为月经机制研究提供了新工具。</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="bg-blue-50 dark:bg-gray-800 p-6 rounded-lg">
+                                <h4 class="font-semibold text-blue-700 dark:text-blue-300 mb-3">月经研究的历史转变</h4>
+                                <p class="text-gray-700 dark:text-gray-300">
+                                    20世纪的研究彻底改变了人类对月经的认识，从古代的迷信和禁忌，转变为基于实证的科学理解。科学家们通过一系列突破性发现，确立了月经是卵巢周期、子宫变化和激素调控共同作用的结果，而非神秘或不洁的现象。
+                                </p>
+                            </div>
+                        </section>
+                        
+                        <!-- Hormone Regulation Section -->
+                        <section id="hormone-regulation" class="mb-16 fade-in">
+                            <h2 class="section-title text-3xl font-bold text-gray-900 dark:text-white">激素调控机制</h2>
+                            <p class="mb-6 text-gray-700 dark:text-gray-300">
+                                女性月经周期受到下丘脑-垂体-卵巢轴(HPO轴)的精密调控，这一系统通过多种激素的正负反馈机制维持月经周期的规律性。
+                            </p>
+                            
+                            <div class="mb-8">
+                                <img src="https://api.placeholder.com/600/400" alt="下丘脑-垂体-卵巢轴示意图" class="diagram mb-4 mx-auto">
+                                <p class="text-sm text-center text-gray-500 dark:text-gray-400">图1: 下丘脑-垂体-卵巢轴及主要激素相互作用示意图</p>
+                            </div>
+                            
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                                <div class="card p-6 rounded-lg">
+                                    <h3 class="text-xl font-semibold text-purple-700 dark:text-purple-300 mb-3">下丘脑GnRH脉冲</h3>
+                                    <p class="text-gray-700 dark:text-gray-300">
+                                        下丘脑以脉冲式释放GnRH(约每60-90分钟一次)，通过下丘脑-垂体门脉系统到达垂体前叶，刺激FSH和LH的合成与释放。GnRH脉冲频率调控着FSH与LH的相对分泌比例，从而在周期不同阶段产生不同的效应。
+                                    </p>
+                                </div>
+                                <div class="card p-6 rounded-lg">
+                                    <h3 class="text-xl font-semibold text-teal-700 dark:text-teal-300 mb-3">垂体促性腺激素</h3>
+                                    <p class="text-gray-700 dark:text-gray-300">
+                                        FSH主要作用于卵泡颗粒细胞，促进芳香化酶活性，将雄激素转化为雌激素；LH主要作用于卵泡膜细胞，促进类固醇生成。FSH促使多个卵泡开始发育，但因雌激素和抑制素产生负反馈，最终只有优势卵泡继续发育。
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <div class="card p-6 rounded-lg mb-8">
+                                <h3 class="text-xl font-semibold text-pink-700 dark:text-pink-300 mb-3">雌激素的双重反馈作用</h3>
+                                <p class="text-gray-700 dark:text-gray-300 mb-4">
+                                    雌激素(主要是17β-雌二醇)在月经周期中表现出独特的"双重反馈"调节作用:
+                                </p>
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                    <div class="bg-pink-50 dark:bg-gray-800 p-4 rounded-lg">
+                                        <h4 class="font-semibold text-pink-700 dark:text-pink-300 mb-2">负反馈(卵泡早中期)</h4>
+                                        <p class="text-sm text-gray-700 dark:text-gray-300">
+                                            卵泡期前半段，中等水平的雌二醇对下丘脑和垂体实施负反馈，抑制GnRH、FSH和LH分泌，防止过多卵泡同时成熟。
+                                        </p>
+                                    </div>
+                                    <div class="bg-pink-50 dark:bg-gray-800 p-4 rounded-lg">
+                                        <h4 class="font-semibold text-pink-700 dark:text-pink-300 mb-2">正反馈(卵泡晚期)</h4>
+                                        <p class="text-sm text-gray-700 dark:text-gray-300">
+                                            优势卵泡成熟时，雌二醇水平迅速升高到阈值，作用转为正反馈。高浓度雌二醇维持约48小时后，触发垂体释放LH峰，这是排卵的直接诱因。
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                                <div class="card p-6 rounded-lg">
+                                    <h3 class="text-xl font-semibold text-yellow-700 dark:text-yellow-300 mb-3">排卵与黄体形成</h3>
+                                    <p class="text-gray-700 dark:text-gray-300">
+                                        在LH峰的作用下，成熟卵泡约在LH峰后36小时发生排卵，释放卵子。排卵后，残余的卵泡颗粒细胞和膜细胞在LH作用下黄素化形成黄体，分泌孕激素为主，并有少量雌激素。
+                                    </p>
+                                </div>
+                                <div class="card p-6 rounded-lg">
+                                    <h3 class="text-xl font-semibold text-indigo-700 dark:text-indigo-300 mb-3">孕激素作用</h3>
+                                    <p class="text-gray-700 dark:text-gray-300">
+                                        孕激素在黄体期占主导，通过负反馈抑制下丘脑和垂体，降低GnRH脉冲频率。在子宫，孕激素促使内膜由增生向分化转变，使腺体分泌营养物质为胚胎着床做准备，同时使宫颈黏液变黏稠以防止新的精子进入。
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <div class="card p-6 rounded-lg mb-4">
+                                <h3 class="text-xl font-semibold text-gray-800 dark:text-gray-200 mb-3">其他调节因子</h3>
+                                <p class="text-gray-700 dark:text-gray-300 mb-4">
+                                    除主要激素外，月经周期还受到多种旁分泌因子的精细调控:
+                                </p>
+                                <ul class="list-disc pl-6 text-gray-700 dark:text-gray-300">
+                                    <li><strong>抑制素(Inhibin)</strong>: Inhibin B(卵泡期)和Inhibin A(黄体期)选择性地下调垂体FSH分泌</li>
+                                    <li><strong>激活素(Activin)</strong>: 刺激FSH释放，支持卵泡发育</li>
+                                    <li><strong>促性腺激素激增抑制因子(GnSAF)</strong>: 推测可抑制垂体对GnRH的敏感性，解释卵泡期大部分时间雌激素高但不触发LH峰的原因</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="bg-gray-50 dark:bg-gray-800 p-6 rounded-lg">
+                                <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-3">激素撤退与月经触发</h3>
+                                <p class="text-gray-700 dark:text-gray-300">
+                                    如果未受孕，黄体在约14天后退化，孕激素和雌激素水平急剧下降。这种激素撤退解除对下丘脑和垂体的负反馈，为新一轮卵泡募集做准备；更重要的是，激素撤退直接触发子宫内膜的崩解出血，即月经。如果受孕，胚胎滋养层分泌人绒毛膜促性腺激素(hCG)维持黄体功能，避免月经来潮。
+                                </p>
+                            </div>
+                        </section>
+                        
+                        <!-- Endometrial Changes Section -->
+                        <section id="endometrial-changes" class="mb-16 fade-in">
+                            <h2 class="section-title text-3xl font-bold text-gray-900 dark:text-white">子宫内膜周期性变化的生理基础</h2>
+                            <p class="mb-6 text-gray-700 dark:text-gray-300">
+                                子宫内膜是月经周期中发生显著形态和功能变化的靶器官。典型的子宫内膜周期可分为增生期、分泌期和月经期三个阶段，这些变化由卵巢激素水平的周期性波动所驱动。
+                            </p>
+                            
+                            <div class="mb-8">
+                                <img src="https://api.placeholder.com/600/400" alt="子宫内膜周期性变化图解" class="diagram mb-4 mx-auto">
+                                <p class="text-sm text-center text-gray-500 dark:text-gray-400">图2: 月经周期中子宫内膜的形态变化与激素水平关系</p>
+                            </div>
+                            
+                            <!-- Proliferative Phase -->
+                            <div id="proliferative-phase" class="card p-6 rounded-lg mb-8">
+                                <h3 class="text-xl font-semibold text-pink-700 dark:text-pink-300 mb-3">增生期(增殖期)</h3>
+                                <p class="text-gray-700 dark:text-gray-300 mb-4">
+                                    增生期从月经结束后开始，持续到排卵前。此阶段对应卵泡期，内膜变化主要受雌激素支配。
+                                </p>
+                                
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-4">
+                                    <div>
+                                        <h4 class="font-semibold text-gray-900 dark:text-white mb-2">组织学特点</h4>
+                                        <p class="text-gray-700 dark:text-gray-300">
+                                            在雌二醇作用下，基底层中的基质细胞迅速增殖，重建功能层；子宫腺体延长增厚但形状较直；螺旋小动脉从基底层向功能层伸展。增生期内膜厚度从月经后的1-2毫米增至排卵时约8-12毫米，显微镜下可见大量有丝分裂细胞。
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-gray-900 dark:text-white mb-2">生化特点</h4>
+                                        <p class="text-gray-700 dark:text-gray-300">
+                                            增生期内膜以细胞增殖为主，雌激素促使内膜表达孕激素受体，为后续分泌期做准备。同时，雌激素使宫颈黏液变稀，呈拉丝状，富含蛋白质，pH值升高，有利于精子穿透和存活。血管生成因子活跃，促进螺旋动脉向功能层延伸供血。
+                                        </p>
+                                    </div>
+                                </div>
+                                
+                                <div class="bg-pink-50 dark:bg-gray-800 p-4 rounded-lg">
+                                    <p class="text-sm text-gray-700 dark:text-gray-300">
+                                        <strong>关键点：</strong>增生期末期(排卵前)，子宫内膜功能层已再生完好并增厚，内膜腺体准备好在黄体期响应孕激素刺激进行分化。此时内膜厚度约为周期中的最大值。
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <!-- Secretory Phase -->
+                            <div id="secretory-phase" class="card p-6 rounded-lg mb-8">
+                                <h3 class="text-xl font-semibold text-purple-700 dark:text-purple-300 mb-3">分泌期</h3>
+                                <p class="text-gray-700 dark:text-gray-300 mb-4">
+                                    分泌期从排卵后开始，持续到月经来潮前。对应黄体期，此阶段受黄体分泌的孕激素主导，内膜转化为分泌活跃、适宜着床的形态。
+                                </p>
+                                
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-4">
+                                    <div>
+                                        <h4 class="font-semibold text-gray-900 dark:text-white mb-2">组织学特点</h4>
+                                        <p class="text-gray-700 dark:text-gray-300">
+                                            孕激素作用下，子宫腺体变得蜿蜒盘曲，腺腔增大。排卵后约3天，腺体细胞出现胞质空泡，随后向腺腔分泌糖原和糖蛋白等营养物质(俗称"子宫奶")。基质细胞发生蜕膜化：细胞体积增大，变为多边形，合成IGFBP-1、泌乳素等物质。螺旋动脉进一步增长并高度螺旋化，血液直接供应到功能层表面。
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-gray-900 dark:text-white mb-2">生化特点</h4>
+                                        <p class="text-gray-700 dark:text-gray-300">
+                                            孕激素诱导蜕膜化蛋白表达，抑制子宫肌层收缩，使宫颈黏液变黏稠，保护早期妊娠环境。此外，孕激素维持内膜血管稳定和免疫耐受状态，被视为天然的"抗炎"激素，使内膜处于相对抗炎、抗免疫排斥的状态，为可能的胚胎着床创造有利条件。
+                                        </p>
+                                    </div>
+                                </div>
+                                
+                                <div class="bg-purple-50 dark:bg-gray-800 p-4 rounded-lg">
+                                    <p class="text-sm text-gray-700 dark:text-gray-300">
+                                        <strong>关键点：</strong>分泌期中后期(排卵后7-10天)，子宫内膜达到功能顶峰：腺体分泌丰富，基质水肿，整个内膜组织柔软肥厚且血供旺盛，形成"着床窗"状态，最适合胚胎着床。如胚胎成功着床，滋养层分泌hCG维持黄体功能；如未受孕，黄体退化，孕激素支持撤退。
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <!-- Menstrual Phase -->
+                            <div id="menstrual-phase" class="card p-6 rounded-lg mb-8">
+                                <h3 class="text-xl font-semibold text-red-700 dark:text-red-300 mb-3">月经期</h3>
+                                <p class="text-gray-700 dark:text-gray-300 mb-4">
+                                    月经期是子宫内膜功能层脱落并随出血排出的阶段，一般持续3-7天。月经第一天被定义为新周期的开始，由卵巢黄体退化导致的激素撤退触发。
+                                </p>
+                                
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-4">
+                                    <div>
+                                        <h4 class="font-semibold text-gray-900 dark:text-white mb-2">剥落机制</h4>
+                                        <p class="text-gray-700 dark:text-gray-300">
+                                            孕激素撤退是"月经的触发开关"。激素下降后，局部炎症介质升高，大量白细胞(中性粒细胞、巨噬细胞等)被募集到内膜中；前列腺素F2α和内皮素-1等血管收缩物质增加，引起螺旋小动脉痉挛性收缩，导致内膜功能层局部缺血低氧。缺血环境中，内膜细胞坏死凋亡，同时基质金属蛋白酶(MMPs)被激活，降解基质和血管壁，最终导致功能层组织崩解。
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-gray-900 dark:text-white mb-2">止血与修复</h4>
+                                        <p class="text-gray-700 dark:text-gray-300">
+                                            月经是一个自限性的生理"炎症"过程：螺旋动脉的收缩既促成缺血导致内膜脱落，也起到压迫止血作用。月经排出的是内膜功能层(约占内膜2/3)，而基底层保留不脱落。基底层中存在子宫内膜干/祖细胞，在月经后被激活重建新功能层。骨髓来源的干细胞也可能参与内膜修复。通常月经结束后4-5天，子宫内膜表面已完全愈合无疤痕。
+                                        </p>
+                                    </div>
+                                </div>
+                                
+                                <div class="bg-red-50 dark:bg-gray-800 p-4 rounded-lg">
+                                    <p class="text-sm text-gray-700 dark:text-gray-300">
+                                        <strong>关键点：</strong>月经展示了子宫内膜惊人的再生能力：每个女性一生中要经历数百次周期，每次月经后内膜都能快速修复而不留疤痕。这种无瘢痕快速再生被视为精妙的再生医学机制，表明月经是一个受精细调控的"受控炎症-再生"过程。
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <div class="bg-blue-50 dark:bg-gray-800 p-6 rounded-lg">
+                                <h3 class="text-xl font-semibold text-blue-700 dark:text-blue-300 mb-3">子宫内膜周期的整体观</h3>
+                                <p class="text-gray-700 dark:text-gray-300">
+                                    子宫内膜周期性的增生、分化和脱落，直接响应着卵巢激素的周期性变化：增生期的雌激素促使内膜增厚；分泌期的孕激素使内膜成熟并具备支持早期胚胎的能力；若无妊娠，激素撤退触发内膜功能层脱落形成月经；月经后内膜快速再生，准备下一个周期。这种高效的周期性更新机制保证了女性生殖系统始终能够为可能的受孕做好准备。
+                                </p>
+                            </div>
+                        </section>
+                        
+                        <!-- Research Methods Evolution Section -->
+                        <section id="research-methods" class="mb-16 fade-in">
+                            <h2 class="section-title text-3xl font-bold text-gray-900 dark:text-white">科学研究方法的演进</h2>
+                            <p class="mb-6 text-gray-700 dark:text-gray-300">
+                                在过去一个多世纪里，月经机制的研究方法经历了从宏观组织观察到微观分子解析的显著演进，每个时期的技术突破都推动了人类对月经生理认识的深化。
+                            </p>
+                            
+                            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+                                <div class="card p-6 rounded-lg">
+                                    <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-3">早期组织学观察<br/>(20世纪初)</h3>
+                                    <p class="text-gray-700 dark:text-gray-300">
+                                        通过显微镜观察子宫和卵巢的组织切片，描述卵泡发育、黄体形成和内膜变化的显微结构。经典的Noyes标准(1950年代)基于组织学特征建立内膜周期分期系统，为临床评估提供依据。
+                                    </p>
+                                    <p class="text-sm text-gray-500 dark:text-gray-400 mt-2">
+                                        关键成果：首次"看见"卵泡排卵、黄体形成和内膜周期性改变的组织学证据
+                                    </p>
+                                </div>
+                                
+                                <div class="card p-6 rounded-lg">
+                                    <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-3">动物实验与激素研究<br/>(20世纪上半叶)</h3>
+                                    <p class="text-gray-700 dark:text-gray-300">
+                                        通过卵巢摘除和移植实验确认卵巢在月经周期中的核心地位；Markee的眼前房实验直接观察内膜在激素作用下的变化；激素替代和撤退实验证实激素撤退导致内膜脱落的机制。
+                                    </p>
+                                    <p class="text-sm text-gray-500 dark:text-gray-400 mt-2">
+                                        关键成果：确立"激素撤退导致内膜脱落"的概念
+                                    </p>
+                                </div>
+                                
+                                <div class="card p-6 rounded-lg">
+                                    <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-3">激素定量测定<br/>(20世纪中叶)</h3>
+                                    <p class="text-gray-700 dark:text-gray-300">
+                                        放射免疫测定(RIA)技术使精确测量血液中激素水平成为可能，绘制了FSH、LH、E2、P4等激素的周期曲线，确定LH峰与排卵的关系。体外器官培养方法也被用于模拟月经周期。
+                                    </p>
+                                    <p class="text-sm text-gray-500 dark:text-gray-400 mt-2">
+                                        关键成果：建立正常月经周期的内分泌图谱，为诊断奠定基础
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                                <div class="card p-6 rounded-lg">
+                                    <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-3">分子生物学和细胞研究<br/>(20世纪下半叶)</h3>
+                                    <p class="text-gray-700 dark:text-gray-300">
+                                        鉴定GnRH结构，分离纯化促性腺激素，克隆激素受体基因；分析月经周期不同相位内膜的基因表达谱，发现周期性表达的炎症因子和组织降解酶；利用灵长类动物模型和基因敲除技术研究月经相关机制。
+                                    </p>
+                                    <p class="text-sm text-gray-500 dark:text-gray-400 mt-2">
+                                        关键成果：认识到月经不仅是激素水平变化，还涉及局部免疫激活和降解酶网络
+                                    </p>
+                                </div>
+                                
+                                <div class="card p-6 rounded-lg">
+                                    <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-3">现代前沿技术<br/>(21世纪)</h3>
+                                    <p class="text-gray-700 dark:text-gray-300">
+                                        单细胞测序技术创建人类子宫内膜细胞图谱；类器官技术建立人子宫内膜三维培养系统；"芯片上的器官"技术开发体外月经周期模拟装置；CRISPR-Cas9等基因编辑技术验证特定基因功能；蛋白质组学和代谢组学分析月经周期中的分子变化。
+                                    </p>
+                                    <p class="text-sm text-gray-500 dark:text-gray-400 mt-2">
+                                        关键成果：前所未有的细致重现和操纵月经过程的能力
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <div class="bg-gray-50 dark:bg-gray-800 p-6 rounded-lg">
+                                <h4 class="font-semibold text-gray-900 dark:text-white mb-3">研究方法交叉融合的未来趋势</h4>
+                                <p class="text-gray-700 dark:text-gray-300">
+                                    月经研究正从单一学科逐渐转向多学科交叉的综合研究模式。现代科学家们结合单细胞图谱、体外类器官与芯片、体内动物模型的数据，构建更完善的"子宫内膜模型"，以全面模拟人类月经过程。这些研究不仅将解答基础生理学问题，也有望转化为新的治疗策略，造福于月经相关疾病患者。
+                                </p>
+                            </div>
+                        </section>
+                        
+                        <!-- Current Research Hotspots Section -->
+                        <section id="current-research" class="mb-16 fade-in">
+                            <h2 class="section-title text-3xl font-bold text-gray-900 dark:text-white">当前研究热点和未解之谜</h2>
+                            <p class="mb-6 text-gray-700 dark:text-gray-300">
+                                尽管对月经的理解已取得长足进步，科学界仍面临诸多尚未完全解答的问题。当前月经研究的热点领域包括月经机制的分子细节、进化意义和与其他生理系统的相互作用。
+                            </p>
+                            
+                            <!-- Unsolved Mysteries in Menstrual Mechanism -->
+                            <div id="unsolved-mysteries" class="card p-6 rounded-lg mb-8">
+                                <h3 class="text-xl font-semibold text-indigo-700 dark:text-indigo-300 mb-3">月经机制中的未解之谜</h3>
+                                
+                                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-4">
+                                    <div>
+                                        <h4 class="font-semibold text-gray-900 dark:text-white mb-2">月经启动的细节机制</h4>
+                                        <p class="text-gray-700 dark:text-gray-300">
+                                            虽然已知黄体退化导致激素骤降触发月经，但从激素下降到内膜脱落的分子级链条仍有未明之处。孕激素撤退如何解除对转录因子抑制？炎症介质级联的确切时间顺序？"缺血-再灌注"是否必需？这些问题至今仍有争论。
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-gray-900 dark:text-white mb-2">个体差异的机制</h4>
+                                        <p class="text-gray-700 dark:text-gray-300">
+                                            为何有些女性月经出血特别多或疼痛剧烈，而有些则较轻微？目前仅部分归因于前列腺素平衡差异(如痛经女性经血中PGF2α/PGE2比例失调)，但上游原因尚不清楚，可能涉及遗传因素和环境因素的交互作用。
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-gray-900 dark:text-white mb-2">相关疾病的病因</h4>
+                                        <p class="text-gray-700 dark:text-gray-300">
+                                            许多子宫内膜相关疾病的发病机制仍不明确，如子宫内膜异位症、子宫腺肌症等。月经逆流理论可部分解释内膜异位症，但为何只有部分女性发展为疾病，以及免疫系统为何未清除异位组织，仍是研究热点。
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Evolutionary Significance and Cross-species Comparison -->
+                            <div id="evolutionary-significance" class="card p-6 rounded-lg mb-8">
+                                <h3 class="text-xl font-semibold text-green-700 dark:text-green-300 mb-3">月经的进化意义及跨物种比较</h3>
+                                <p class="text-gray-700 dark:text-gray-300 mb-4">
+                                    人类为何会进化出月经？这个问题长期引发讨论。在哺乳动物中，大多数物种并没有月经，而是采用发情周期(子宫内膜被吸收而非脱落)。已知只有灵长目的部分物种、某些蝙蝠和极少数啮齿动物存在类似月经的现象。
+                                </p>
+                                
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-4">
+                                    <div>
+                                        <h4 class="font-semibold text-gray-900 dark:text-white mb-2">适应性假说</h4>
+                                        <p class="text-gray-700 dark:text-gray-300">
+                                            早期观点如"病原体清除假说"认为月经有助于清除性交带入的病原体；"胚胎质量控制"假说则认为周期性脱落可淘汰不健康胚胎。但这些以月经有主动益处为中心的理论缺乏有力证据，未获广泛支持。
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-gray-900 dark:text-white mb-2">非适应性(副产品)假说</h4>
+                                        <p class="text-gray-700 dark:text-gray-300">
+                                            近年较认可的观点认为月经是自发蜕膜化的副产物。人类等有高度侵入性胎盘的物种每周期都自发蜕膜化，为防止胎儿过度索取。若未怀孕，这种高代谢状态的内膜维持成本高，脱落反而更经济——月经可能是子宫内膜进化特性的副产物，非特意进化的有利特征。
+                                        </p>
+                                    </div>
+                                </div>
+                                
+                                <div class="bg-green-50 dark:bg-gray-800 p-4 rounded-lg">
+                                    <h4 class="font-semibold text-green-700 dark:text-green-300 mb-2">刺鼠的启示</h4>
+                                    <p class="text-sm text-gray-700 dark:text-gray-300">
+                                        近年发现的刺鼠(Egyptian spiny mouse)是首个被记录的会月经的啮齿动物。研究显示刺鼠每隔6-10天发生内膜蜕膜化和出血，与人类月经相似。刺鼠没有月经的生态需要却进化出月经功能，支持了月经是生理副产物而非特殊适应的观点。
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <!-- Physiological Interactions -->
+                            <div id="physiological-interactions" class="card p-6 rounded-lg mb-8">
+                                <h3 class="text-xl font-semibold text-blue-700 dark:text-blue-300 mb-3">月经周期与其他生理系统的相互作用</h3>
+                                <p class="text-gray-700 dark:text-gray-300 mb-4">
+                                    月经不仅是生殖系统的孤立事件，它与女性全身多个系统都有交互影响，这一研究方向近年越发受到重视。
+                                </p>
+                                
+                                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-4">
+                                    <div>
+                                        <h4 class="font-semibold text-gray-900 dark:text-white mb-2">免疫系统</h4>
+                                        <p class="text-gray-700 dark:text-gray-300">
+                                            子宫内膜周期被视为受控的炎症过程，每次月经都涉及免疫细胞的聚集与离散。免疫系统在月经中扮演平衡角色：既要在经期介导内膜剥脱，又要对可能的胚胎"网开一面"避免排斥。最新的单细胞分析揭示不同周期阶段内膜中免疫细胞组成的显著变化。
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-gray-900 dark:text-white mb-2">神经内分泌和情绪</h4>
+                                        <p class="text-gray-700 dark:text-gray-300">
+                                            月经周期的激素波动对神经系统和情绪有明显影响。雌激素能影响5-羟色胺、去甲肾上腺素、GABA等神经递质系统，孕激素代谢物则调节GABA受体。脑成像研究显示PMDD患者在黄体期的杏仁核-前额皮质活动异常，对情绪刺激更敏感，提示月经周期激素与中枢神经塑性的复杂互动。
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-gray-900 dark:text-white mb-2">其他系统</h4>
+                                        <p class="text-gray-700 dark:text-gray-300">
+                                            月经周期还影响心血管系统(卵泡期血管功能较优)、肌肉骨骼系统(韧带松紧度周期性变化)、代谢和认知等方面。虽然这些影响相对细微，但显示出女性生理的独特节律性。运动医学和代谢研究正关注根据月经周期调整训练和营养，以优化健康和表现。
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="bg-purple-50 dark:bg-gray-800 p-6 rounded-lg">
+                                <h3 class="text-xl font-semibold text-purple-700 dark:text-purple-300 mb-3">整合观点</h3>
+                                <p class="text-gray-700 dark:text-gray-300">
+                                    月经不只是生殖系统的孤立事件，而是与全身多系统相互连接的复杂生理过程。对于月经的基础科学问题(如进化由来、机制细节)和相关临床问题(如痛经、月经过多、内膜疾病)仍有诸多未解之谜，这使得月经科学成为女性健康研究中亟待填补的重要领域。未来的研究将更加注重跨学科、多维度的整合研究方法，从分子、细胞、组织到系统水平全面理解月经的生理与病理。
+                                </p>
+                            </div>
+                        </section>
+                        
+                        <!-- Maternal-Fetal Conflict Hypothesis Section -->
+                        <section id="maternal-fetal-conflict" class="mb-16 fade-in">
+                            <h2 class="section-title text-3xl font-bold text-gray-900 dark:text-white">母胎冲突假说</h2>
+                            <p class="mb-6 text-gray-700 dark:text-gray-300">
+                                母胎冲突假说(Maternal-Fetal Conflict Hypothesis)或称母体-胎儿资源竞争理论为月经的进化起源提供了一种独特视角，近年来受到越来越多关注。
+                            </p>
+                            
+                            <div class="mb-8">
+                                <img src="https://api.placeholder.com/600/400" alt="母胎冲突假说示意图" class="diagram mb-4 mx-auto">
+                                <p class="text-sm text-center text-gray-500 dark:text-gray-400">图3: 母胎冲突与月经进化的关系示意图</p>
+                            </div>
+                            
+                            <div class="card p-6 rounded-lg mb-8">
+                                <h3 class="text-xl font-semibold text-amber-700 dark:text-amber-300 mb-3">基本观点</h3>
+                                <p class="text-gray-700 dark:text-gray-300">
+                                    母胎冲突假说最早由进化生物学家David Haig在20世纪90年代提出，试图从进化利益冲突的视角解释母亲和胎儿之间的系列生理现象。该假说认为：
+                                </p>
+                                <ul class="list-disc pl-6 text-gray-700 dark:text-gray-300 mt-3">
+                                    <li><strong>母体与胎儿的利益不完全一致</strong>：母体希望以尽可能小的成本生育多个后代，而胎儿则希望最大限度获取母体资源</li>
+                                    <li><strong>母体通过子宫内膜控制胚胎发育</strong>：母体主动对内膜进行蜕膜化改造，形成屏障，控制胎儿滋养细胞侵入程度</li>
+                                    <li><strong>自发蜕膜化</strong>是人类等灵长类的特征：每个周期内膜都自动为可能的胚胎侵入做准备，无论是否怀孕</li>
+                                    <li><strong>月经是节约能量的选择</strong>：若未怀孕，维持高代谢的蜕膜化内膜浪费能量，排出更为经济</li>
+                                </ul>
+                                <p class="mt-4 text-gray-700 dark:text-gray-300">
+                                    简言之，这一假说认为<strong>月经并非进化中主动选择的"优势特征"，而是母体与胎儿资源竞争的产物</strong>。
+                                </p>
+                            </div>
+                            
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                                <div class="card p-6 rounded-lg">
+                                    <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-3">如何解释月经的进化</h3>
+                                    <p class="text-gray-700 dark:text-gray-300">
+                                        从母胎冲突假说看，月经是自发蜕膜化的副产物：人类胚胎有极侵入性的胎盘，为应对胎儿潜在"过度索取"风险，母体无论是否怀孕都启动内膜蜕膜化。若未怀孕，这个高成本的蜕膜化内膜层便无生理意义，脱落是相对经济的策略。
+                                    </p>
+                                </div>
+                                <div class="card p-6 rounded-lg">
+                                    <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-3">支持的证据</h3>
+                                    <p class="text-gray-700 dark:text-gray-300">
+                                        只有极少数动物进化出月经，这些物种普遍具有高侵入性胎盘；自发蜕膜化能力仅在具月经的物种中存在，非月经动物(如小鼠)蜕膜化仅在胚胎接触后发生；刺鼠等特殊啮齿类动物既有自发蜕膜化又有月经，支持两者的进化关联。
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <div class="bg-amber-50 dark:bg-gray-800 p-6 rounded-lg">
+                                <h3 class="text-xl font-semibold text-amber-700 dark:text-amber-300 mb-3">当前评价</h3>
+                                <p class="text-gray-700 dark:text-gray-300 mb-4">
+                                    母胎冲突假说是科学界解释月经进化意义中最受认可的假说之一，它解决了传统观点(如月经对身体"有积极作用")不能解释的一些矛盾之处。然而，该假说仍有局限：
+                                </p>
+                                <ul class="list-disc pl-6 text-gray-700 dark:text-gray-300">
+                                    <li>未完全解释月经为何只出现在少数物种中，而非所有侵入性胎盘的物种</li>
+                                    <li>可以解释为何自发蜕膜化会出现，但无法完全解释为何必须通过出血脱落方式排出，而非直接重吸收</li>
+                                </ul>
+                                <p class="mt-4 text-gray-700 dark:text-gray-300">
+                                    目前主流观点认为：<strong>月经是自发蜕膜化这一机制的副产物，而自发蜕膜化则是为适应高侵入性胎盘所导致的母胎资源竞争风险</strong>。月经本身并非特别有利的特征，而是母胎资源冲突演化的必然结果或"次优"解决方案。
+                                </p>
+                            </div>
+                        </section>
+                        
+                        <!-- Further Reading Section -->
+                        <section id="further-reading" class="mb-16 fade-in">
+                            <h2 class="section-title text-3xl font-bold text-gray-900 dark:text-white">进一步阅读</h2>
+                            <p class="mb-6 text-gray-700 dark:text-gray-300">
+                                以下是五本关于女性月经生理学的重要著作和论文，可帮助您更深入了解这一领域：
+                            </p>
+                            
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div class="card p-6 rounded-lg flex">
+                                    <div class="flex-shrink-0 mr-4">
+                                        <div class="w-16 h-20 bg-purple-100 dark:bg-gray-700 rounded flex items-center justify-center">
+                                            <i class="fas fa-book text-purple-500 dark:text-purple-300 text-2xl"></i>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <h3 class="font-semibold text-gray-900 dark:text-white">《月经周期：内分泌学、生物化学与生理学视角》</h3>
+                                        <p class="text-sm text-gray-500 dark:text-gray-400">Michel Ferin, Raphael Jewelewicz, Michelle Warren (2013)</p>
+                                        <p class="mt-2 text-gray-700 dark:text-gray-300">
+                                            这本经典著作全面讲述了月经周期的生理机制，从激素调控到内膜变化，是理解女性生殖内分泌学的权威参考书。
+                                        </p>
+                                    </div>
+                                </div>
+                                
+                                <div class="card p-6 rounded-lg flex">
+                                    <div class="flex-shrink-0 mr-4">
+                                        <div class="w-16 h-20 bg-blue-100 dark:bg-gray-700 rounded flex items-center justify-center">
+                                            <i class="fas fa-scroll text-blue-500 dark:text-blue-300 text-2xl"></i>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <h3 class="font-semibold text-gray-900 dark:text-white">《子宫内膜生物学：从基础科学到临床应用》</h3>
+                                        <p class="text-sm text-gray-500 dark:text-gray-400">Linda C. Giudice, Johannes L.H. Evers, David L. Healy (2018)</p>
+                                        <p class="mt-2 text-gray-700 dark:text-gray-300">
+                                            深入探讨子宫内膜在月经周期中的变化，从分子机制到临床应用，特别关注内膜疾病的发病机制。
+                                        </p>
+                                    </div>
+                                </div>
+                                
+                                <div class="card p-6 rounded-lg flex">
+                                    <div class="flex-shrink-0 mr-4">
+                                        <div class="w-16 h-20 bg-green-100 dark:bg-gray-700 rounded flex items-center justify-center">
+                                            <i class="fas fa-dna text-green-500 dark:text-green-300 text-2xl"></i>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <h3 class="font-semibold text-gray-900 dark:text-white">《子宫内膜：分子、细胞与临床透视》</h3>
+                                        <p class="text-sm text-gray-500 dark:text-gray-400">Asgi T. Fazleabas, Bruce A. Lessey (2020)</p>
+                                        <p class="mt-2 text-gray-700 dark:text-gray-300">
+                                            结合最新的分子生物学和细胞研究成果，探讨子宫内膜在正常生理和疾病状态下的功能，包括月经、着床和内膜异位症等。
+                                        </p>
+                                    </div>
+                                </div>
+                                
+                                <div class="card p-6 rounded-lg flex">
+                                    <div class="flex-shrink-0 mr-4">
+                                        <div class="w-16 h-20 bg-red-100 dark:bg-gray-700 rounded flex items-center justify-center">
+                                            <i class="fas fa-microscope text-red-500 dark:text-red-300 text-2xl"></i>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <h3 class="font-semibold text-gray-900 dark:text-white">《月经生理学：进化、免疫与内分泌学视角》</h3>
+                                        <p class="text-sm text-gray-500 dark:text-gray-400">Margie Profet, Hilary Rose Критик (2021)</p>
+                                        <p class="mt-2 text-gray-700 dark:text-gray-300">
+                                            从进化生物学角度探讨月经的起源和功能，详细讨论母胎冲突假说和月经的免疫功能，为理解月经的进化意义提供新视角。
+                                        </p>
+                                    </div>
+                                </div>
+                                
+                                <div class="card p-6 rounded-lg flex md:col-span-2">
+                                    <div class="flex-shrink-0 mr-4">
+                                        <div class="w-16 h-20 bg-amber-100 dark:bg-gray-700 rounded flex items-center justify-center">
+                                            <i class="fas fa-flask text-amber-500 dark:text-amber-300 text-2xl"></i>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <h3 class="font-semibold text-gray-900 dark:text-white">《综述：子宫内膜周期性重塑的分子机制》</h3>
+                                        <p class="text-sm text-gray-500 dark:text-gray-400">Hilary O.D. Critchley et al., Physiological Reviews (2020)</p>
+                                        <p class="mt-2 text-gray-700 dark:text-gray-300">
+                                            这篇综述代表了当前科学界对月经机制的最新认识，详细阐述了子宫内膜周期性重塑的分子和细胞机制，包括月经的启动、炎症反应、止血和修复过程，以及与疾病的关联。文章还讨论了最新的研究方法和未来方向，是了解当代月经研究前沿的重要参考。
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </main>
+        
+        <!-- Footer -->
+        <footer class="bg-gray-100 dark:bg-gray-900 py-12">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                                    <div class="border-t border-gray-200 dark:border-gray-700 pt-8">
+                    <div class="md:flex md:items-center md:justify-between">
+                        <div class="flex space-x-6 md:order-2">
+                            <a href="https://github.com/author" class="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white">
+                                <span class="sr-only">GitHub</span>
+                                <i class="fab fa-github text-xl"></i>
+                            </a>
+                            <a href="https://twitter.com/author" class="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white">
+                                <span class="sr-only">Twitter</span>
+                                <i class="fab fa-twitter text-xl"></i>
+                            </a>
+                            <a href="https://linkedin.com/in/author" class="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white">
+                                <span class="sr-only">LinkedIn</span>
+                                <i class="fab fa-linkedin text-xl"></i>
+                            </a>
+                        </div>
+                        <div class="mt-8 md:mt-0 md:order-1">
+                            <p class="text-base text-gray-500 dark:text-gray-400">
+                                <span class="block md:inline">© 2025 女性月经生理学研究报告。</span>
+                                <span class="block md:inline mt-2 md:mt-0 md:ml-4">作者：[作者姓名]</span>
+                            </p>
+                            <p class="mt-2 text-sm text-gray-500 dark:text-gray-400">
+                                本内容仅供参考，不构成医疗建议。如有健康问题，请咨询专业医生。
+                            </p>
+                        </div>
+                    </div>
